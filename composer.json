@@ -1,6 +1,9 @@
 {
   "name": "ms100/open-wps",
+  "type": "library",
   "description": "the Open Wps library",
+  "keywords": ["wps","office"],
+  "homepage": "https://github.com/MS100/open-wps",
   "authors": [
     {
       "name": "ms",
