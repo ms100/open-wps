@@ -1,0 +1,15 @@
+# Optional REPL history
+.svn
+.fis-tmp
+.DS_Store
+.cache
+._*
+*副本*
+.tmp
+.gulp
+.swp
+.tmp_sendtest
+.idea
+.vscode
+vendor
+composer.lock

@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no"
+          name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <title><?=$this->getTitle()?></title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            touch-action: manipulation;
+        }
+
+        iframe {
+            flex: 1;
+        }
+    </style>
+    <script type="text/javascript"><?=$this->getJsSdk() ?
+    ></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var wps = WebOfficeSDK.config({
+                mount: document.querySelector('body'),
+                wpsUrl: '<?=$this->getWpsUrl()?>',
+                headers: {}
+            })
+            wps.setCommandBars( < ? = $this->getCommandBarsSettingStr() ?
+        >)
+        <
+                ? php
+            if ($this->isNeedToken()):
+                ?
+        >
+            wps.setToken({token: '<?=$this->getToken()?>'})
+            < ? php endif;
+                ?
+        >
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
