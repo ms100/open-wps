@@ -1,4 +1,6 @@
-## 开发之前
+本类库主要针对金山WPS开放平台提供的文档在线编辑功能进行封装
+
+## 安装
 
 ```shell script
 composer require ms100/openwps
